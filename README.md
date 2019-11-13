@@ -1,4 +1,4 @@
-# NataliaZharova.github.io
+# https://github.com/NataliaZharova/NataliaZharova.github.io
 
 ##Version
-v0.0.1
+v0.0.2

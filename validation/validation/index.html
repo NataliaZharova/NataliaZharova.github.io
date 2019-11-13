@@ -46,7 +46,7 @@
                 class="form__input"
                 type="email"
                 name="name"
-                pattern="^[A-Za-z0-9/./_/-]+@yandex\.ru$"
+                pattern="^[-\w.]+@[A-Za-z]+\.[A-Za-z]+$"
                 placeholder="E-Mail"
               />
               <span class="form__error">e-mail в формате: sega@yandex.ru</span>
@@ -57,7 +57,7 @@
                 type="tel"
                 name="name"
                 placeholder="Телефон"
-                pattern="(^\+7(\(\d{3}\)|\(\d{3}\)\s|\s\d{3}[\-])\d{3}-\d{2}-\d{2}$)|(^\+7\d{9}$)|(^8\d{10}$)"
+                pattern="(^\+7(\(\d{3}\)|\(\d{3}\)\s|\s\d{3}[\-])\d{3}-\d{2}-\d{2}$)|(^\+7\d{10}$)|(^8\d{10}$)"
                 minlength=""
                 maxlength=""
               />
@@ -69,7 +69,8 @@
               <input
                 class="form__input"
                 name="name"
-                pattern="^((http)|(https)):\/\/(\w{3}\.)?((\w+\.ru)|(\d{3}\.\d{3}\.\d{3}\.\d{3}))(:\d{2,5})?(\d+[A-Za-z]+\/(#)?)$"
+                type="url"
+                pattern="^https?:\/\/(\w|-|\.)+(:\d{2,5})?(\/(\w|-|\/)*)?#?$"
                 placeholder="Ваш сайт"
               />
               <span class="form__error">URL в формате: http://mysite.ru</span>
